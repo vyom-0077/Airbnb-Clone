@@ -1,0 +1,57 @@
+<header
+  class="bg-gray-800 text-white p-4 shadow-md transition duration-300 ease-in-out hover:bg-red-500"
+>
+  <nav class="container mx-auto flex justify-between items-center">
+    <ul class="flex space-x-4">
+      <li>
+        <button
+          onclick="location.href='/'"
+          class="<%= currentPage === 'index' ? 'bg-red-500 border-white' : 'bg-red-500 hover:bg-gray-700' %> py-2 px-4 rounded-full border-2 border-transparent transition duration-300 transform hover:scale-105"
+        >
+          Airbnb
+        </button>
+      </li>
+      <li>
+        <button
+          onclick="location.href='/homes'"
+          class="<%= currentPage === 'Home' ? 'bg-red-500 border-white' : 'bg-red-500 hover:bg-gray-700' %> py-2 px-4 rounded-full border-2 border-transparent transition duration-300 transform hover:scale-105"
+        >
+          Homes-List
+        </button>
+      </li>
+      <li>
+        <button
+          onclick="location.href='/favourites'"
+          class="<%= currentPage === 'favourites' ? 'bg-red-500 border-white' : 'bg-red-500 hover:bg-gray-700' %> py-2 px-4 rounded-full border-2 border-transparent transition duration-300 transform hover:scale-105"
+        >
+          Favourites
+        </button>
+      </li>
+      <li>
+        <button
+          onclick="location.href='/bookings'"
+          class="<%= currentPage === 'bookings' ? 'bg-red-500 border-white' : 'bg-red-500 hover:bg-gray-700' %> py-2 px-4 rounded-full border-2 border-transparent transition duration-300 transform hover:scale-105"
+        >
+          Bookings
+        </button>
+      </li>
+      <li>
+        <button
+          onclick="location.href='/host/host-home-list'"
+          class="<%= currentPage === 'host-homes' ? 'bg-red-500 border-white' : 'bg-red-500 hover:bg-gray-700' %> py-2 px-4 rounded-full border-2 border-transparent transition duration-300 transform hover:scale-105"
+        >
+          Host Homes
+        </button>
+      </li>
+      <li>
+        <button
+          onclick="location.href='/host/add-home'"
+          class="<%= currentPage === 'addHome' ? 'bg-red-500 border-white' : 'bg-red-500 hover:bg-gray-700' %> py-2 px-4 rounded-full border-2 border-transparent transition duration-300 transform hover:scale-105"
+        >
+          Add Home
+        </button>
+      </li>
+    </ul>
+    <img src="images/airbnb.svg" alt="" class="h-14 w-14" />
+  </nav>
+</header>
